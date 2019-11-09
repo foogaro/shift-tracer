@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%-30thread] [%-36X{header_funnelInstanceId}]
+                [%-6X{header_codiceFrazionario}] [%-2X{header_pdl}] [%-8X{header_userIdOperatore}]
+                [%-25X{header_identificativoSessione}] [%5p] %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

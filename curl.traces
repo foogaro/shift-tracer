@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in {1..100}
+do
+    curl -k http://localhost:8080/repeat/this
+    sleep 0.5
+    curl -k http://localhost:8080/giveMeFive
+    sleep 0.5
+    curl -k http://localhost:8080/repeat/that
+done
+
+#for i in {1..10}; do curl -v http://localhost:8080/repeat/this; sleep $sleeping; curl -v http://localhost:8080/giveMeFive; sleep $sleeping; curl -v http://localhost:8080/repeat/that; sleep $sleeping; done
