@@ -67,7 +67,32 @@ curl -vk http://localhost:8080/reapet/this
 
 
 ## Pros
-Developers just need to add the OpenTracing and ShiftTracer dependencies to their code, and decide at deployment time to switch between tracer implementation.
+Developers just need to add the OpenTracing and ShiftTracer dependencies to their code, and decide at deployment which tracer implementation to set.
+
+The dependencies:
+```xml
+<!-- OpenTracing API -->
+<dependency>
+    <groupId>io.opentracing</groupId>
+    <artifactId>opentracing-api</artifactId>
+    <version>0.32.0</version>
+</dependency>
+
+<!-- Shift Tracer -->
+<dependency>
+    <groupId>com.datadog.opentracing</groupId>
+    <artifactId>core</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
+```
+
+The environment variable:
+```bash
+export TRACER_NAME=DATADOG
+```
+
+If the environment variable has not a valid value (JAEGER or DATADOG), it will use the Jaeger Traer.
 
 A common use case would be:
 * Jaeger for dev and test
