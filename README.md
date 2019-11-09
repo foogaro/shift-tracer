@@ -96,7 +96,7 @@ The environment variable:
 export TRACER_NAME=DATADOG
 ```
 
-If the environment variable has not a valid value (JAEGER or DATADOG), it will use the Jaeger Traer.
+If the environment variable has not a valid value (JAEGER or DATADOG), it will use the Jaeger Tracer.
 
 A common use case would be:
 * Jaeger for dev and test
