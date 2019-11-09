@@ -59,6 +59,8 @@ curl -vk http://localhost:8080/reapet/this
 
 ![Jaeger UI](jaeger-ui-01.png)
 
+![Jaeger UI](jaeger-ui-02.png)
+
 #### Datadog APM Traces
 
 ![Datadog APM Traces](datadog-apm-traces-01.png)
