@@ -38,7 +38,9 @@ docker build -t shift-tracer:latest .
 ### Testing
 To test the Shift Tracer, use the ```docker-compose``` command, as follows:
 
-```docker-compose up```
+```bash
+docker-compose up
+```
 
 This will rely on the ```docker-compose.yaml``` file provided with the code.
 It will run the following containers:
