@@ -16,22 +16,10 @@
 
         <dependencies>
 
-            <dependency>
-                <groupId>com.datadog.opentracing</groupId>
-                <artifactId>core</artifactId>
-                <scope>compile</scope>
-            </dependency>
-
             <!-- Spring Boot Starter Web -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
-
-            <!-- Opentracing, Jaeger -->
-            <dependency>
-                <groupId>io.opentracing.contrib</groupId>
-                <artifactId>opentracing-spring-jaeger-web-starter</artifactId>
             </dependency>
 
             <!-- Prometheus -->
@@ -50,6 +38,8 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
             </dependency>
+
+            <!-- Shift Tracer -->
             <dependency>
                 <groupId>com.datadog.opentracing</groupId>
                 <artifactId>core</artifactId>
