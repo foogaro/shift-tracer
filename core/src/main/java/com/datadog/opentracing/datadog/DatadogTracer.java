@@ -13,6 +13,7 @@ public final class DatadogTracer {
         if (!GlobalTracer.registerIfAbsent(tracer)) {
             return GlobalTracer.get();
         }
+        datadog.trace.api.GlobalTracer.registerIfAbsent((datadog.trace.api.Tracer) tracer);
         return tracer;
     }
 
